@@ -2,6 +2,7 @@
 *::after,
 *::before {
     box-sizing: border-box;
+    font-family: Roboto, sans-serif;
 }
 
 body {
@@ -19,14 +20,23 @@ body {
 }
 
 .dashboard {
+    background-color: dodgerblue;
+    font-weight: bold;
     grid-column: 1;
     grid-row: 1 / 6;
     display: grid;
-    grid-template-rows: 2fr repeat(10, 1fr);
+    grid-template-rows: 60px repeat(10, 30px);
+    align-items: center;
 }
 
 .dashboard>a:first-child {
     font-size: 24px;
+}
+
+.dashboard>a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
 }
 
 .topbar {
