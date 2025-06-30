@@ -21,6 +21,12 @@ body {
 .dashboard {
     grid-column: 1;
     grid-row: 1 / 6;
+    display: grid;
+    grid-template-rows: 2fr repeat(10, 1fr);
+}
+
+.dashboard>a:first-child {
+    font-size: 24px;
 }
 
 .topbar {
