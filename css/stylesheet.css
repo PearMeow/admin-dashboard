@@ -20,23 +20,37 @@ body {
 }
 
 .dashboard {
+    padding: 0 10px;
     background-color: dodgerblue;
     font-weight: bold;
     grid-column: 1;
     grid-row: 1 / 6;
     display: grid;
     align-items: center;
+    grid-template-columns: 2fr 5fr;
+    grid-template-rows: 2fr repeat(10, 1fr) 9fr;
 }
 
 .dashboard img {
     height: 30px;
     width: 30px;
+    justify-self: center;
 }
 
-a {
+.dashboard>a {
+    font-size: 18px;
+    padding-left: 10px;
     text-decoration: none;
     color: white;
-    padding: 0 30px;
+}
+
+.dashboard>.first-a {
+    font-size: 27px;
+}
+
+.dashboard>.first-img {
+    height: 45px;
+    width: 45px;
 }
 
 .topbar {
@@ -56,18 +70,4 @@ a {
     grid-template-rows: 30px;
     place-items: center;
     padding: 0 20px;
-}
-
-.first-item {
-    font-size: 24px;
-    display: grid;
-    grid-template-columns: 60px 1fr;
-    grid-template-rows: 60px;
-    place-items: center;
-    padding: 20px;
-}
-
-.first-item>img {
-    width: 60px;
-    height: 60px;
 }
