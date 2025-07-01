@@ -71,3 +71,51 @@ body {
     place-items: center;
     padding: 0 20px;
 }
+
+.topbar {
+    display: grid;
+    grid-template-columns: 5fr 4fr;
+    grid-template-rows: 4fr 5fr;
+    box-shadow: 0 2px 5px grey;
+    position: relative;
+    padding: 10px;
+    align-items: center;
+}
+
+.topbar img {
+    width: 30px;
+}
+
+.search {
+    padding: 0 10px;
+}
+
+.search>img {
+    height: 30px;
+    width: 100%;
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+}
+
+.profile,
+.buttons {
+    justify-self: end;
+}
+
+.welcome {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.welcome>img {
+    justify-self: center;
+    align-self: center;
+}
+
+.content {
+    background-color: lightgrey;
+}
