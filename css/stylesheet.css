@@ -108,12 +108,17 @@ body {
 
 .welcome {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 5fr;
 }
 
 .welcome>img {
     justify-self: center;
     align-self: center;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .content {
