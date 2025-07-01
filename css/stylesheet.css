@@ -80,7 +80,7 @@ body {
     display: grid;
     grid-template-columns: 5fr 3fr;
     grid-template-rows: 4fr 5fr;
-    box-shadow: 0 2px 5px grey;
+    box-shadow: 0 2px 5px lightgrey;
     position: relative;
     padding: 10px 40px 10px 20px;
     align-items: center;
@@ -189,8 +189,76 @@ label[for="searchbar"]>img,
     border: 0px;
     padding: 10px 20px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .content {
-    background-color: lightgrey;
+    background-color: #e2e9f1;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 10px;
+    gap: 0 25px;
+}
+
+.projects,
+.announcements,
+.trending {
+    align-items: center;
+}
+
+.projects {
+    grid-row: 1 / 3;
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30px repeat(3, 1fr);
+}
+
+.projects>p {
+    grid-column: 1 / 3;
+}
+
+.announcements {
+    grid-row: 1;
+    grid-column: 2;
+    display: grid;
+    grid-template-rows: 30px repeat(3, 1fr);
+}
+
+.projects,
+.announcements,
+.trending {
+    place-items: center;
+}
+
+.trending {
+    grid-row: 2;
+    grid-column: 2;
+    display: grid;
+    grid-template-rows: 30px repeat(4, 1fr);
+}
+
+.projects>p,
+.announcements>p,
+.trending>p {
+    justify-self: left;
+    font-weight: 500;
+    margin: 0;
+    padding-left: 10px;
+    grid-row: 1;
+}
+
+.someproject {
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding: 20px;
+    box-shadow:
+        0 2px 2px lightgrey,
+        5px 0 0 orange inset;
 }
