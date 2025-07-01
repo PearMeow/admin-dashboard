@@ -11,6 +11,10 @@ body {
     margin: 0;
 }
 
+.dashboard img[src$="svg"] {
+    filter: invert(91%) sepia(99%) saturate(36%) hue-rotate(256deg) brightness(107%) contrast(100%);
+}
+
 .container {
     height: 100%;
     width: 100%;
@@ -74,12 +78,13 @@ body {
 
 .topbar {
     display: grid;
-    grid-template-columns: 5fr 4fr;
+    grid-template-columns: 5fr 3fr;
     grid-template-rows: 4fr 5fr;
     box-shadow: 0 2px 5px grey;
     position: relative;
-    padding: 10px;
+    padding: 10px 40px 10px 20px;
     align-items: center;
+    font-weight: bold;
 }
 
 .topbar img {
@@ -87,7 +92,9 @@ body {
 }
 
 .search {
-    padding: 0 10px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 9fr;
 }
 
 .search>img {
@@ -95,10 +102,42 @@ body {
     width: 100%;
 }
 
+.search input {
+    border-radius: 20px;
+    background-color: lightblue;
+    border: 0;
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+.search input:focus {
+    outline: 0;
+    border: 1px solid grey;
+}
+
+label[for="searchbar"] {
+    display: grid;
+    place-items: center;
+}
+
+label[for="searchbar"]>img,
+.profile>img[src*="bell.svg"] {
+    width: 20px;
+    height: 20px;
+}
+
+.profile>img:nth-child(2) {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+}
+
 .profile {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 30px 30px 1fr;
+    gap: 35px;
     place-items: center;
+    padding-right: 20px;
 }
 
 .profile,
@@ -114,11 +153,42 @@ body {
 .welcome>img {
     justify-self: center;
     align-self: center;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+.wrapper {
+    display: grid;
+    padding: 5px 10px;
+    grid-template-rows: 2fr 3fr;
+}
+
+.wrapper>* {
+    margin: 0;
+}
+
+.wrapper>p:first-child {
+    font-size: 18px;
+}
+
+.wrapper>p:last-child {
+    font-size: 27px;
 }
 
 .buttons {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 0 20px;
+}
+
+.buttons>button {
+    background-color: royalblue;
+    color: white;
+    border-radius: 30px;
+    border: 0px;
+    padding: 10px 20px;
+    font-weight: bold;
 }
 
 .content {
