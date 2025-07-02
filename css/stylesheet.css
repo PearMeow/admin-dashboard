@@ -198,7 +198,7 @@ label[for="searchbar"]>img,
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
     padding: 20px 30px;
-    gap: 0 25px;
+    gap: 30px 25px;
 }
 
 .projects,
