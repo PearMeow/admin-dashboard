@@ -1,6 +1,6 @@
 <h1 align="center">Admin Dashboard</h1>
 
-An admin dashboard made for TOP
+An admin dashboard made for TOP.
 
 Features
 --------
