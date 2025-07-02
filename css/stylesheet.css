@@ -257,8 +257,6 @@ label[for="searchbar"]>img,
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    padding: 20px;
     box-shadow:
         0 2px 2px lightgrey,
-        5px 0 0 orange inset;
 }
